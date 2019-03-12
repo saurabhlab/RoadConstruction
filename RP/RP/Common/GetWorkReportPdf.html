@@ -1,0 +1,161 @@
+﻿
+<section class="property_listing" style="border: 2px solid double; padding:5px; margin:10px">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12  mar_to_70 brdr-btm">
+                <h2 class="headingBlue" style="text-align:center;">
+                    Work Report
+                </h2>
+                <div style="background:#fff; padding:10px">
+
+                    <h3> Hello ,  this is your Work Report </h3> <br />
+                   
+                    @{ if(@Model.WorkList != null && @Model.WorkList.Count() > 0){
+
+                    <table class="foreal_pdf" border="2px solid black" cellpadding="10" cellspacing="5" width="100%">
+                        <tr>
+                            <td>
+                                <h3 class="headingBlue" style="text-align:center;">
+                                    Work Report Details
+                                </h3>
+
+                                <table width="100%" align="left" cellpadding="0" cellspacing="5" style="" background:#fff;">
+                                    <thead>
+                                        <tr class="grey_gb">
+                                            <th>CaseNo</th>
+                                            <th>City</th>
+                                            <th>CaseSite</th>
+                                            
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach (var item in @Model.WorkList)
+                                        {
+                                        <tr style="text-align:center;">
+                                            <td>@item.CaseNo</td>
+                                            <td>@item.City</td>
+                                            <td>@item.CaseSite</td>
+                                        
+                                        </tr>
+                                        }
+
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                    }}
+                    <div class="clearfix"></div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<style type="text/css">
+    body, table, td, p, a, li, blockquote {
+        -webkit-text-size-adjust: none !important;
+        font-family: Arial;
+        /*	color: #666;*/
+        color: #000;
+        font-size: 14px;
+    }
+
+    .foreal_pdf {
+        margin: 10px auto;
+    }
+
+    element.style {
+        font-size: 14px;
+    }
+
+    *::after, *::before {
+        box-sizing: border-box;
+    }
+
+    *::after, *::before {
+        box-sizing: border-box;
+    }
+
+    b, strong {
+        font-weight: 700;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    .form-group.user_acc_register label {
+        color: #ffffff;
+    }
+
+    label {
+        cursor: default;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+        line-height: 1.42857;
+    }
+
+    *::after, *::before {
+        box-sizing: border-box;
+    }
+
+    *::after, *::before {
+        box-sizing: border-box;
+    }
+
+    .form-group {
+        margin-bottom: 15px !important;
+    }
+
+    .form-group {
+        margin-bottom: 15px !important;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    article, aside, details, div, dt, figcaption, footer, form, header, hgroup, html, main, nav, section, summary {
+        display: block;
+    }
+
+    address, article, aside, blockquote, body, caption, center, col, colgroup, dd, dir, div, dl, dt, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, hr, html, legend, li, listing, main, marquee, menu, nav, noframes, ol, p, plaintext, pre, section, summary, table, tbody, td, tfoot, th, thead, tr, ul, xmp {
+        unicode-bidi: isolate;
+    }
+
+    body {
+        font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+        color: #333333;
+        font-size: 14px;
+        line-height: 1.42857;
+    }
+
+    .grey_gb {
+        background: #bebebe none repeat scroll 0 0;
+        color: #333333;
+        font-size: 14px;
+        font-weight: 600;
+        padding: 10px;
+    }
+
+    .foreal_pdf.trading_as {
+        background: #f1f1f1 none repeat scroll 0 0;
+        border-left: 1px solid #c1c1c1;
+        border-right: 1px solid #c1c1c1;
+    }
+</style>
